@@ -3,8 +3,8 @@ let downloadFile = (url) => {
         if(!url.startsWith('http')){
             reject(new Error("URL must start with http"))
         } else {
+            console.log("Downloading The File: ",url)
             setTimeout(() => {
-                console.log("Downloading The File")
                 let fileName = url.split("/").pop();
                 resolve(fileName)
             },1500)

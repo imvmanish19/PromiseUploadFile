@@ -3,8 +3,8 @@ let resizeFile = (file) => {
         if(!file.endsWith('png')){
             reject(new Error("file must be png"))
         } else {
+            console.log("Resizing The File:",file)
             setTimeout(() => {
-                console.log("Resizing The File")
                 let fileName = file.split('.')[0] + '-resized.png';
                 resolve(fileName)
             },1500)

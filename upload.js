@@ -3,7 +3,7 @@ let uploadFile = (file) => {
         setTimeout(() => {
             let uploadedURL = 'https://imgur.com' + file;
             resolve(uploadedURL)
-        },3000)
+        },1500)
     })
 }
 
